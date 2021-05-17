@@ -9,6 +9,8 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
+	padding: 20px;
+	box-sizing: border-box;
 }
 
 .container{
@@ -40,7 +42,7 @@ h3 {
 p {
 	font-size: 0.875em;
 	line-height: 1.31em;
-  padding: 0 30px;
+  padding: 0 0px;
 }
 
 /*The widths are in a percentage!*/
@@ -54,14 +56,17 @@ header {
 
 header h1 {
 	margin: 0;
-	padding: 38px 0;
+	width: 100%;
+	text-align: center;
+	padding: 38px 10px 10px 10px;
+	border-bottom: 3px solid #77a466;
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	padding: 46px 0;
+	padding: 20px 0;
 }
 header nav ul {
 	margin: 0;
@@ -71,8 +76,8 @@ header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 14px;
-	padding: 0 10px;
-	display: inline;
+	padding: 10px 0;
+	list-style-type: none;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -118,7 +123,7 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 100%;
 	border-top: 1px solid #eee;
 }
 
@@ -127,13 +132,13 @@ header nav ul li a{
 }
 
 .section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
 }
 
 .section-two h3,
 .section-three h3 {
-	padding: 10px 30px;
+	padding: 10px;
 }
 
 .menu {
@@ -171,4 +176,65 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.875em;
+}
+
+/*Tablet styles*/
+@media all and (min-width:768px) {
+	body {
+		padding: 40px;
+	}
+
+	.bottom-section {
+		border-bottom: 1px solid #eee;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 30%;
+
+}
+
+.section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	padding: 0 20px;
+}
+
+.section-three {
+	padding-left: 20px;
+}
+
+/*Desktop Styles*/
+@media all and (min-width:1200px) {
+	header h1 {
+			width: 50%;
+			padding: ;
+			border-bottom: 3px solid #77a466;
+			text-align: center;
+}
+
+		header nav ul li {
+			display: inline;
+			padding: 10px;
+		}
+
+		.top-section {
+			padding: 20px;
+		}
+
+		.top-section h2 {
+			padding-top: 20px;
+		}
+
+		.section-one,
+		.section-two,
+		.section-three {
+			width: 30%;
+			border-top: 1px solid #eee;
+		}
+
+		.section-two {
+			border-left: 1px solid #eee;
+			border-right: 1px solid #eee;
 }
